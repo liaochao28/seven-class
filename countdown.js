@@ -97,7 +97,7 @@ function updateBalls() {
 				balls[cnt++] = balls[i];
 			};
 		};	
-		while( balls.length > Math.min(550,cnt) ){
+		while( balls.length > Math.min(650,cnt) ){
 			balls.pop();
 		};
 		//console.log(balls.length)
