@@ -1,0 +1,50 @@
+/*site.css*/
+body, div, p, span, ul, ol, dl, li, table, tr, td, header, footer, section, aside, article, nav {
+  margin: 0;
+  padding: 0; }
+
+header, footer, section, aside, article, nav {
+  display: block; }
+html, body{
+	height:100%;
+}
+
+
+body {
+  color: #666;
+  background: #fff;
+  font: 10px/1.5 "Microsoft yahei",tahoma,arial,"Hiragino Sans GB",sans-serif;
+  position: relative; }
+
+body {
+  overflow: -moz-scrollbars-vertical; }
+
+ul, ol, dl {
+  list-style: none; }
+
+img {
+  border: none; }
+
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
+.clearfix {
+  zoom: 1; }
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: "";
+  clear: both;
+  height: 0; }
+
+a {
+  word-break: break-all; }
+
+a:link, a:visited, a:hover, a:active {
+  text-decoration: none; }
+
