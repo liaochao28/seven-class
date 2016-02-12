@@ -1,7 +1,10 @@
 /*site.css*/
 body, div, p, span, ul, ol, dl, li, table, tr, td, header, footer, section, aside, article, nav {
   margin: 0;
-  padding: 0; }
+  padding: 0; 
+  box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+}
 
 header, footer, section, aside, article, nav {
   display: block; }
@@ -14,9 +17,7 @@ body {
   color: #666;
   background: #fff;
   font: 10px/1.5 "Microsoft yahei",tahoma,arial,"Hiragino Sans GB",sans-serif;
-  position: relative; }
-
-body {
+  position: relative;
   overflow: -moz-scrollbars-vertical; }
 
 ul, ol, dl {
