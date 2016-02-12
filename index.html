@@ -6,6 +6,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
 		<title>三年七班</title>
 
+		<link rel="stylesheet" href="resource/bootstrap.min.css">
 		<link rel="stylesheet" href="css/site.css">
 		<link rel="stylesheet" media="all and (min-width:768px)" href="css/index.css">
 		<link rel="stylesheet" media="all and (max-width:768px)" href="css/index.css">
@@ -30,9 +31,10 @@
 				</h1>
 				<div class="links-list">
 					<ul>
-						<li><a href=""><span class="icon"></span>asd</a></li>
-						<li><a href=""><span class="icon"></span>call me</a></li>
-						<li><a href=""><span class="icon"></span>about me</a></li>
+						<li><a href=""><span class="icon"></span>那些年...</a></li>
+						<li><a href=""><span class="icon"></span>我们一起走过的</a></li>
+						<li><a href=""><span class="icon"></span>逝去的青春</a></li>
+						<li><a href=""><span class="icon"></span>剩下的点滴</a></li>
 					</ul>
 				</div>
 				<div class="copyright">
@@ -41,8 +43,39 @@
 			</header>
 
 			<div class="content">
-				000
+				<div>
+					<ul>
+						<li>1</li>
+						<li>2</li>
+						<li>3</li>
+						<li>4</li
+					</ul>
+				</div>
 			</div>
 		</div>
+		<script src="resource/jquery-1.11.3.min.js"></script>
+		<script src="resource/bootstrap.min.js"></script>
+		<script>
+
+			/**
+			 *设置宽高比
+			 *初次加载和window的resize时间都将调用
+			**/
+			function setHeight(list) {
+				$.each(list, function(){
+					var _thisW = $(this).width();
+					$(this).css("height", (_thisW*2)+"px");
+				});
+			}
+
+			$(document).ready(function(){
+				var lists = $(".content div ul li");
+				setHeight(lists);
+			});
+			$(window).resize(function(){
+				var lists = $(".content div ul li");
+				setHeight(lists);
+			});
+		</script>
 	</body>
 </html>

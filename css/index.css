@@ -28,13 +28,14 @@ header .photo img{
 
 header h1{
 	text-align: center;
-	font-size:1.4rem;
+	font-size:2.4rem;
 }
 header h1 small{
 	display: block;
 	text-align: right;
 	padding-right: 45px;
-	font-size: 0.6rem;
+	margin-top: 10px;
+	font-size: 1.2rem;
 }
 .links-list ul {
 	padding:0 50px;
@@ -72,4 +73,34 @@ header .copyright{
 	left: 300px;
 	top: 0px;
 	bottom: 0px;
+}
+
+.content div{
+
+}
+.content div ul li{
+	display: inline-block;
+	width: 20%;
+	/*height:250px;*/
+	height: 250px;
+	margin:10px 2%;
+	padding:20px 15px;
+	background: url(../pic/border.jpg) no-repeat center center;
+	background-size: 100% 100%;
+	box-shadow: 5px 5px 10px rgba(0,0,0,.3);
+	box-sizing:border-box;
+	cursor:pointer;
+	transition: all 0.5s ease-in-out;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+}
+.content div ul li:hover{
+	/*background: none;*/
+	transform:rotateY(360deg);
+	-ms-transform:rotateY(360deg); 	/* IE 9 */
+	-moz-transform:rotateY(360deg); 	/* Firefox */
+	-webkit-transform:rotateY(360deg); /* Safari 和 Chrome */
+	-o-transform:rotateY(360deg); 	/* Opera */
 }
